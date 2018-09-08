@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './EmptyNav.css';
 
 class EmptyNav extends Component {
@@ -32,3 +32,5 @@ class EmptyNav extends Component {
 
 
 }
+
+export default EmptyNav;
