@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import './SignUpForm.css'
 
 class SignupForm extends Component {
     constructor() {
@@ -100,3 +101,4 @@ class SignupForm extends Component {
 
 }
 
+export default SignupForm;

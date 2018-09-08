@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom';
-import './login.css'
+import './LoginForm.css'
 
 class LoginForm extends Component {
     constructor () {
@@ -73,6 +73,6 @@ class LoginForm extends Component {
             )
         }
     }
-}
+};
 
-export default LoginForm
+export default LoginForm;
