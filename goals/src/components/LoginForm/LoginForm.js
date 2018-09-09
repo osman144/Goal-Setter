@@ -33,42 +33,28 @@ class LoginForm extends Component {
             return <Redirect to={{ pathname: this.state.redirectTo }} />
         } else {
             return (
-                <div className="valign-wrapper row login-box">
-					<div className="grey darken-1 col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
-						<form>
-							<div className="card-content">
-							<span className="card-title ">Enter credentials</span>
-							<div className="row">
-								<div className="input-field col s12">
-								{/* Username */}
-								<label htmlFor="email">Username: </label>
-								<input
-									className="input-box"
-									type="email"
-									id="email"
-									name="username"
-									value={this.state.username}
-									onChange={this.handleChange}
-								/>
-								</div>
-								<div className="input-field col s12">
-								{/* Password */}
-								<label htmlFor="password">Password: </label>
-								<input
-									className="input-box"
-									type="password"
-									name="password"
-									value={this.state.password}
-									onChange={this.handleChange}
-								/>
-								</div>
+                <div className="mdl-layout mdl-js-layout">
+					<main className="mdl-layout__content">
+						<div className="mdl-card mdl-shadow--6dp">
+							
+						<div className="mdl-card__supporting-text">
+								<form action="#">
+									<div className="mdl-textfield mdl-js-textfield">
+										<input className="mdl-textfield__input" type="text" id="username" />
+										<label className="mdl-textfield__label" htmlFor="username">Username</label>
+									</div>
+									<div className="mdl-textfield mdl-js-textfield">
+										<input className="mdl-textfield__input" type="password" id="userpass" />
+										<label className="mdl-textfield__label" htmlFor="userpass">Password</label>
+									</div>
+								</form>
 							</div>
+							<div className="mdl-card__actions mdl-card--border">
+								<button className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
+								<button id="sign-up" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Sign up</button>
 							</div>
-							<div className="card-action right-align">
-							<input onClick={this.handleSubmit} type="submit" className="btn deep-purple accent-1 waves-effect waves-light btn" value="Login"/>
-							</div>
-						</form>
-					</div>
+						</div>
+					</main>
 				</div>
             )
         }

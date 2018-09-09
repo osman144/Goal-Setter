@@ -1,0 +1,25 @@
+.demo-layout-transparent {
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+/* This background is dark, so we set text to white. Use 87% black instead if
+    your background is light. */
+color: white;
+}
+
+body {
+    background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+ }
+ 
+ body,
+ html {
+    overflow: hidden;
+ }
+
+ 
