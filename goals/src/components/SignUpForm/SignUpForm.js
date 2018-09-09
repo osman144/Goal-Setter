@@ -53,17 +53,38 @@ class SignUpForm extends Component {
 				<div className="mdl-card__supporting-text">
 						<form action="#">
 							<div className="mdl-textfield mdl-js-textfield">
-								<input className="mdl-textfield__input" type="text" id="username" />
+								<input className="mdl-textfield__input" 
+								type="email"
+								id="email"
+								name="username"
+								value={this.state.username}
+								onChange={this.handleChange}
+								
+								/>
 								<label className="mdl-textfield__label" htmlFor="username">Username</label>
 							</div>
 							<div className="mdl-textfield mdl-js-textfield">
-								<input className="mdl-textfield__input" type="password" id="userpass" />
+								<input className="mdl-textfield__input" 
+								type="password"
+								name="password"
+								value={this.state.password}
+								onChange={this.handleChange}
+								 />
 								<label className="mdl-textfield__label" htmlFor="userpass">Password</label>
+							</div>
+							<div className="mdl-textfield mdl-js-textfield">
+								<input className="mdl-textfield__input"
+								type="password"
+								name="confirmPassword"
+								value={this.state.confirmPassword}
+								onChange={this.handleChange}
+								
+								/>
+								<label className="mdl-textfield__label" htmlFor="userpass">Confirm Password</label>
 							</div>
 						</form>
 					</div>
 					<div className="mdl-card__actions mdl-card--border">
-						<button className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Log in</button>
 						<button id="sign-up" className="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Sign up</button>
 					</div>
 				</div>
